@@ -1,9 +1,9 @@
 {
-  "name": "Foxy CEG",
-  "short_name": "Foxy CEG",
+  "name": "Foxyz CEG",
+  "short_name": "Foxyz CEG",
   "start_url": "./",
   "scope": "./",
-  "id": "foxy-ceg",
+  "id": "foxyz-ceg",
   "display": "standalone",
   "background_color": "#D7E5FA",
   "theme_color": "#D7E5FA",
