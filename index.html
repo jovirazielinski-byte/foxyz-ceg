@@ -2,71 +2,109 @@
 <html lang="pt-BR">
 
 <head>
+
   <meta charset="UTF-8">
 
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
 
-  <title>Foxy CEG</title>
-
   <meta name="theme-color"
         content="#D7E5FA">
+
+  <title>Foxy CEG</title>
 
   <link rel="manifest"
         href="./manifest.json">
 
   <style>
+
     html,
     body {
       margin: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       background: #D7E5FA;
       font-family: Arial, sans-serif;
     }
 
-    .loading {
-      height: 100%;
+    body {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      color: #18375d;
     }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    h1 {
+      margin: 0 0 25px;
+      color: #18375d;
+      font-size: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 14px;
+      background: #18375d;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
   </style>
+
 </head>
 
 <body>
 
-  <div class="loading">
+  <div class="container">
 
-<img
-  src="https://res.cloudinary.com/hxdbktes/image/upload/v1790862746/foxyzcegraposinha_944x944.jpg"
-  alt="Foxy CEG"
-  style="
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-  "
->
+    <img
+      class="logo"
+      src="https://res.cloudinary.com/hxdbktes/image/upload/v1790865414/foxyzcegraposinha_944x944png.png"
+      alt="Foxy CEG"
+    >
 
-</div>
+    <h1>Foxy CEG</h1>
+
+    <a
+      class="button"
+      href="https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec"
+    >
+      ENTRAR NO FOXY CEG
+    </a>
+
+  </div>
 
   <script>
-    setTimeout(function () {
-      window.location.href =
-        "https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec";
-    }, 500);
+
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener("load", function () {
+
+        navigator.serviceWorker.register("./sw.js");
+
+      });
+
+    }
+
   </script>
 
-  <script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-      navigator.serviceWorker.register("./sw.js");
-    });
-  }
-</script>
-  
 </body>
 
 </html>
