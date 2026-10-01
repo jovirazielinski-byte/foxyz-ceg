@@ -1,7 +1,8 @@
 {
   "name": "Foxy CEG",
   "short_name": "Foxy CEG",
-  "start_url": "https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec",
+  "start_url": "./",
+  "scope": "./",
   "id": "foxy-ceg",
   "display": "standalone",
   "background_color": "#D7E5FA",
