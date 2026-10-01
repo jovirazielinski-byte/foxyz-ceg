@@ -1,0 +1,26 @@
+{
+  "name": "Foxy CEG",
+  "short_name": "Foxy CEG",
+  "start_url": "https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec",
+  "id": "foxy-ceg",
+  "display": "standalone",
+  "background_color": "#D7E5FA",
+  "theme_color": "#D7E5FA",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/hxdbktes/image/upload/v1790862627/foxyzcegraposinha_192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://res.cloudinary.com/hxdbktes/image/upload/v1790862603/foxyzcegraposinha_512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://res.cloudinary.com/hxdbktes/image/upload/v1790862746/foxyzcegraposinha_944x944.jpg",
+      "sizes": "944x944",
+      "type": "image/jpeg"
+    }
+  ]
+}
