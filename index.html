@@ -11,59 +11,100 @@
   <meta name="theme-color"
         content="#D7E5FA">
 
-  <title>Foxyz CEG</title>
+  <title>FOXYZ CEG</title>
 
   <link rel="manifest"
         href="./manifest.json">
 
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
+
+    * {
+      box-sizing: border-box;
+    }
 
     html,
     body {
       margin: 0;
       width: 100%;
       min-height: 100%;
-      background: #D7E5FA;
-      font-family: Arial, sans-serif;
     }
 
     body {
       min-height: 100vh;
+      background: #D7E5FA;
+      font-family: "Nunito", sans-serif;
+
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 40px 25px;
       text-align: center;
-      padding: 30px;
     }
 
     .logo {
-      width: 180px;
-      height: 180px;
+      width: 190px;
+      height: 190px;
       object-fit: contain;
+
       display: block;
-      margin: 0 auto 25px;
+      margin: 0 auto 18px;
     }
 
     h1 {
-      margin: 0 0 25px;
+      margin: 0 0 30px;
+
+      font-family: "Comfortaa", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+
       color: #18375d;
-      font-size: 28px;
+      letter-spacing: 0.5px;
     }
 
     .button {
-      display: inline-block;
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-width: 210px;
       padding: 14px 28px;
-      border-radius: 14px;
+
+      border-radius: 16px;
+
       background: #18375d;
       color: white;
-      text-decoration: none;
+
+      font-family: "Nunito", sans-serif;
       font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
+      font-weight: 800;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .button:active {
+      transform: scale(0.97);
     }
 
   </style>
@@ -77,7 +118,7 @@
     <img
       class="logo"
       src="https://res.cloudinary.com/hxdbktes/image/upload/v1790865414/foxyzcegraposinha_944x944png.png"
-      alt="Foxyz CEG"
+      alt="FOXYZ CEG"
     >
 
     <h1>Foxyz CEG</h1>
@@ -86,7 +127,7 @@
       class="button"
       href="https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec"
     >
-      ENTRAR NO FOXYZ CEG
+      ENTRAR
     </a>
 
   </div>
