@@ -2,53 +2,53 @@
 <html lang="pt-BR">
 
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 
   <title>Foxy CEG</title>
 
-  <meta
-    name="theme-color"
-    content="#D7E5FA"
-  >
+  <meta name="theme-color"
+        content="#D7E5FA">
 
-  <link
-    rel="manifest"
-    href="manifest.json"
-  >
+  <link rel="manifest"
+        href="./manifest.json">
 
   <style>
-
     html,
     body {
       margin: 0;
-      padding: 0;
       width: 100%;
       height: 100%;
       background: #D7E5FA;
+      font-family: Arial, sans-serif;
     }
 
-    iframe {
-      width: 100%;
+    .loading {
       height: 100%;
-      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #18375d;
     }
-
   </style>
-
 </head>
 
 <body>
 
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec"
-    allow="fullscreen"
-  ></iframe>
+  <div class="loading">
+    <div style="font-size: 50px;">🦊</div>
+    <div>Foxy CEG</div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      window.location.href =
+        "https://script.google.com/macros/s/AKfycbzndQHSfixIYyeEBrW_PrmZVQuagMGDHbMr7mrICQZ_eUZmEzUlalkk_h4-VvrfmkRf/exec";
+    }, 500);
+  </script>
 
 </body>
 
